@@ -1,4 +1,7 @@
-const config = require('../knexfile.js')
-const knex = require('knex')(config)
-
-module.exports = knex
+module.exports = app => {
+    const save = (req, res) => {
+        res.send('user save')
+    }
+    
+    return { save }
+}
